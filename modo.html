@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--<button onclick="dl()">登录按钮</button>-->
+		<script type="text/javascript">
+			//1.定义一个函数，实现编写乘法表的功能；（九九乘法表）
+			/*function cfb(a){
+				for(var i = 1; i<=a; i++){
+					for(var j = 1; j<=i; j++){
+						document.write(j+"*"+i+"="+j*i)
+					}
+					document.write("<br>")
+				}
+			}cfb(9)*/
+			//2.根据传入参数，实现两数求和。或三个数求和
+			/*function he(a,b){
+				return a+b;	
+			}
+			alert(he(4,5));*/
+			//3.定义一个函数，调用函数时打印两实参之间的偶数，要求打印5次换行一次
+			/*function os(a){
+				var b = 0;
+				for(var i = 1; i<=a; i++){
+					if(i%2==0){
+						document.write(i);
+						b++;
+						if(b%5==0){
+							document.write("<br>")
+						}
+					}
+				}
+			}os(100)*/
+			//4.实现点击注册按钮弹出注册成功，点击登录按钮弹出登录成功。
+			/*function dl(){
+				alert("登录成功");
+			}*/
+			//6.封装函数，传入两个参数。比较两个数的大小。如果谁大就输出谁。
+			/*var dx = function(a,b){
+				if(a>b){
+					alert(a+"大");
+				}else{
+					alert(b+"大")
+				}
+			}
+			dx(4,5)*/
+			//7.什么是形参，什么是实参；
+			/*var 函数名 = function(形参){
+				函数体;
+			}
+			函数名(实参)*/
+			//8.return在函数当中的作用
+			/*1.返回数值
+			2.终止执行(return 后的都不在执行)*/
+			//将一个数组 2，3，4，5，1，65，3，1 进行反转 1，3，65，1，5，4，3，2
+			/*var a = [2,3,4,5,1,65,3,1];
+			a.reverse();
+			alert(a)*/
+			//将一个数组［1，2，3，4，5］转换成字符串1-2-3-4-5
+			/*var a = [1,2,3,4,5];
+			var b = a.join("-");
+			alert(b)*/
+			//自己建立1个数组，删除第一个和最后一个元素
+			/*var a = [1,2,3];
+			a.shift();
+			a.pop()
+			alert(a)*/
+			//如何定义数组
+			/*1.var 数组名 = [];
+			2.var 数组名 = new Array();*/
+			//检测数组的方法
+			/*1.数组名 instanceof Array
+			2.Array.isArray(数组名)*/
+			//有一个数组arr=[6,3,8,10,2]进行排序
+			/*var arr = [6,3,8,10,12]
+			arr.sort(sx);
+			alert(arr);
+			function sx(a,b){
+				return a-b;
+			}*/
+			//var arr=[1,4,6,3,6,7,12,34,5,67,78]数组去重后找出数组中的数，并求和
+			var arr=[1,4,6,3,6,7,12,34,5,67,78];
+			var arr2=[];
+			for (var i=0;i<arr.length;i++) {
+				if (arr2.indexOf(arr[i])==-1) {
+					arr2.push(arr[i])
+				}
+			}
+			var he=0;
+			for (var j=0;j<arr2.length;j++) {
+				he+=arr[j];
+			}
+			document.write(he);
+		</script>
+	</body>
+</html>
